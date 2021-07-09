@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Louis Tourism Page</title>
+    <link rel = "stylesheet" type ="text/css" href ="style.css">
+</head>
+<body>
+    <header>
+        <a href ="#" class ="logo">STL</a>
+        <ul>
+            <li><a href ="#" class = "active">Home</a></li>
+            <li><a href ="#">Events</a></li>
+            <li><a href ="#">Must Sees</a></li>
+            <li><a href = "#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        
+        <img src = "/image/moon.png" id ="moon" alt = "moon">
+        <h2 id ="text">WELCOME TO SAINT LOUIS</h2>
+        <a href = "#sec" id="btn">Explore</a>
+        <img src ="/image/arch.png" id ="arch" alt = "arch">
+     </section>
+     <div class = "sec" id ="sec">
+         <h2>Come to St. Louis</h2>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, perferendis quasi. Autem culpa dolorum voluptatem, facilis molestiae blanditiis nulla recusandae nam velit, corrupti hic ipsum similique natus consequatur voluptas impedit?
+             <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates vel, placeat eos labore temporibus enim laboriosam? Commodi vero nesciunt odit recusandae beatae omnis nisi sed veritatis! Corporis fugit alias minima!
+             <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo, veniam voluptate numquam maxime nisi maiores consectetur beatae placeat, totam tenetur rerum eveniet officiis vitae fugit nulla, aut vero corrupti.
+             <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia nisi magnam reiciendis facere sapiente soluta totam, dolorem, ad a ea accusantium rem amet provident ab quasi tempore aperiam eos illo?
+             <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae magni at doloremque, provident dolorum delectus labore eligendi perspiciatis? Nisi alias debitis quaerat ex ullam ea reprehenderit accusamus quia? Incidunt, veniam!
+             <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi quas a culpa nisi neque, dolor, sed hic non repudiandae dolore commodi. Quasi pariatur nesciunt fugit blanditiis aut rem sunt?
+             <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tempore numquam voluptatibus consequatur et nisi dolorem similique illum ducimus reiciendis necessitatibus, perspiciatis repudiandae illo ipsam doloremque totam nostrum expedita eius.
+             <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores neque voluptatem consequatur soluta exercitationem non at vel voluptate, fugit modi, perspiciatis optio hic quis dolor illum dolorum, quia voluptates a!
+         </p>
+     </div>
+     <script>
+         //let sky = document.getElementById("sky");
+         let moon = document.getElementById("moon");
+         let text = document.getElementById("text");
+         let btn = document.getElementById("btn");
+         let arch = document.getElementById("arch");
+         let header = document.querySelector("header");
+
+         window.addEventListener("scroll", function(){
+             let value = window.scrollY;
+             moon.style.left = value * 0.25 + "px";
+             moon.style.top = value * 1.05 + "px";
+             arch.style.top = value * 0 + "px";
+             text.style.marginRight = value * 6 + "px";
+             text.style.marginTop = value * 1.5 + "px";
+             btn.style.marginTop = value * 1.5 + "px";
+             header.style.top = value * 0.5 + "px";
+         })
+     </script>
+    
+</body>
+</html>
